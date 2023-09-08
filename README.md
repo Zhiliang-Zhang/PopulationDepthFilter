@@ -6,7 +6,7 @@ python popdepth.py -s 100 -i 1.txt -o test2.txt -x 20 -y 20
 ```
 ## Step 2: Genome High Confidence region
 
-choose 80% genome sites
+choose top N% genome sites
 
 ## Step 3: Population variation filter
 ```{}
