@@ -15,7 +15,7 @@ choose top N% genome sites
 ## Step 3: Population variation filter
 Format of ID.txt: depth\tSD\tchr-pos
 ```{}
-for i in {41..42};do nohup python popdepth-ID.py -s 100 -i <(awk '{if($1 < 20 && $2 < 20)print}' ${i}-ID.txt) -o ${i}-density.txt -x 20 -y 20 2>${i}.error & done
+for i in {1..42};do nohup python popdepth-ID.py -s 100 -i <(awk '{if($1 < 20 && $2 < 20)print}' ${i}-ID.txt) -o ${i}-density.txt -x 20 -y 20 2>${i}.error & done
 Usage:  -s: 100*100
         -x: x max
         -y: y max
